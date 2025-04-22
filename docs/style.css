@@ -1,4 +1,33 @@
 /* Modern CSS for Reliable Archival Website (Mobile-Friendly) */
+/* Keyframes for the text animation */
+@keyframes fadeInOut {
+    0% {
+        opacity: 0.4;
+        transform: translateY(-2px);
+    }
+
+    20% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    80% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0.4;
+        transform: translateY(-2px);
+    }
+}
+
+.animated-partner {
+    animation: fadeInOut 1.5s ease-in-out infinite;
+    /* Apply the animation */
+    display: inline-block;
+    /* */
+}
 
 body {
     font-family: 'Inter', sans-serif;
@@ -18,7 +47,7 @@ body {
 /* --- Hero Section --- */
 #hero {
     background-color: #e0f7fa;
-    padding: 120px 0;
+    padding: 15px 0;
     text-align: center;
     background-image: linear-gradient(to bottom, #e0f7fa, #f0f4f8);
 }
@@ -231,24 +260,34 @@ footer p {
 
 /* --- Sticky Contact Button (Mobile) --- */
 .mobile-contact-button {
-    position: fixed; /* Fix the position */
-    bottom: 20px; /* Distance from the bottom */
-    right: 20px; /* Distance from the right */
-    background-color: #4CAF50; /* Green color */
+    position: fixed;
+    /* Fix the position */
+    bottom: 20px;
+    /* Distance from the bottom */
+    right: 20px;
+    /* Distance from the right */
+    background-color: #4CAF50;
+    /* Green color */
     color: white;
     padding: 15px;
-    border-radius: 50%; /* Make it round */
+    border-radius: 50%;
+    /* Make it round */
     font-size: 1.2em;
     text-decoration: none;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Add shadow */
-    z-index: 1000; /* Ensure it's above other elements */
-    display: none; /* Hide on larger screens */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    /* Add shadow */
+    z-index: 1000;
+    /* Ensure it's above other elements */
+    display: none;
+    /* Hide on larger screens */
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .mobile-contact-button:hover {
-    background-color: #388E3C; /* Darker green on hover */
-    transform: scale(1.1); /* Slightly larger on hover */
+    background-color: #388E3C;
+    /* Darker green on hover */
+    transform: scale(1.1);
+    /* Slightly larger on hover */
 }
 
 /* --- Media Queries for Responsiveness --- */
@@ -267,7 +306,8 @@ footer p {
     }
 
     #hero h1 {
-        font-size: 2.5em; /* Smaller heading on medium screens */
+        font-size: 2.5em;
+        /* Smaller heading on medium screens */
     }
 
     #hero p.subheadline {
@@ -275,7 +315,8 @@ footer p {
     }
 
     .services-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 columns on medium screens */
     }
 }
 
@@ -286,15 +327,18 @@ footer p {
     }
 
     #hero {
-        padding: 80px 0; /* Reduced padding on small screens */
+        padding: 10px 0;
+        /* Reduced padding on small screens */
     }
 
     #hero h1 {
-        font-size: 2em; /* Smaller heading on small screens */
+        font-size: 2em;
+        /* Smaller heading on small screens */
     }
 
     #hero p.subheadline {
-        font-size: 1.1em; /* Smaller subheadline */
+        font-size: 1.1em;
+        /* Smaller subheadline */
     }
 
     .cta-button {
@@ -307,11 +351,13 @@ footer p {
     #why-us h2,
     #cta h2,
     #contact h2 {
-        font-size: 2em; /* Smaller section titles on small screens */
+        font-size: 2em;
+        /* Smaller section titles on small screens */
     }
 
     .services-grid {
-        grid-template-columns: 1fr; /* 1 column on small screens */
+        grid-template-columns: 1fr;
+        /* 1 column on small screens */
     }
 
     .service-item {
@@ -331,11 +377,12 @@ footer p {
 /* Smaller than 576px (xs breakpoint) */
 @media (max-width: 576px) {
     #hero {
-        padding: 60px 0;
+        padding: 10px 0;
     }
 
     #hero h1 {
-        font-size: 1.75em; /* Even smaller heading on very small screens */
+        font-size: 1.75em;
+        /* Even smaller heading on very small screens */
     }
 
     #hero p.subheadline {
