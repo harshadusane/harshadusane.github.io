@@ -1,12 +1,12 @@
-/* Modern CSS for Reliable Archival Website */
+/* Modern CSS for Reliable Archival Website (Mobile-Friendly) */
 
 body {
-    font-family: 'Inter', sans-serif; /* More modern font */
+    font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.7; /* Improved line height for readability */
-    color: #343a40; /* Darker, more modern text color */
-    background-color: #f8f9fa; /* Very light background */
+    line-height: 1.7;
+    color: #343a40;
+    background-color: #f8f9fa;
 }
 
 .container {
@@ -18,22 +18,22 @@ body {
 /* --- Hero Section --- */
 #hero {
     background-color: #e0f7fa;
-    padding: 120px 0; /* Increased padding */
+    padding: 120px 0;
     text-align: center;
-    background-image: linear-gradient(to bottom, #e0f7fa, #f0f4f8); /* Subtle gradient */
+    background-image: linear-gradient(to bottom, #e0f7fa, #f0f4f8);
 }
 
 #hero h1 {
-    font-size: 3em; /* Larger heading */
+    font-size: 3em;
     margin-bottom: 25px;
-    font-weight: 700; /* Bold font weight */
-    color: #2c3e50; /* Darker heading color */
+    font-weight: 700;
+    color: #2c3e50;
     letter-spacing: -0.02em;
 }
 
 #hero p.subheadline {
     font-size: 1.3em;
-    color: #6c757d; /* Slightly darker subheadline */
+    color: #6c757d;
     margin-bottom: 40px;
     font-weight: 400;
 }
@@ -43,17 +43,17 @@ body {
     color: white;
     padding: 15px 30px;
     text-decoration: none;
-    border-radius: 0.5rem; /* More rounded corners */
+    border-radius: 0.5rem;
     font-size: 1.2em;
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+    transition: background-color 0.3s ease, transform 0.2s ease;
     cursor: pointer;
     border: none;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Add shadow */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .cta-button:hover {
-    background-color: #00869e; /* Darker teal on hover */
-    transform: translateY(-2px); /* Slight lift on hover */
+    background-color: #00869e;
+    transform: translateY(-2px);
 }
 
 /* --- About Us Section --- */
@@ -67,10 +67,10 @@ body {
 #why-us h2,
 #cta h2,
 #contact h2 {
-    font-size: 2.5em; /* Larger section titles */
+    font-size: 2.5em;
     text-align: center;
     margin-bottom: 50px;
-    font-weight: 600; /* Semi-bold */
+    font-weight: 600;
     color: #2c3e50;
     letter-spacing: -0.02em;
 }
@@ -83,33 +83,33 @@ body {
 /* --- Key Services Section --- */
 #services {
     padding: 80px 0;
-    background-color: #f8f9fa; /* Slightly lighter background */
+    background-color: #f8f9fa;
 }
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Increased min-width */
-    gap: 40px; /* Increased gap */
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
     margin-top: 40px;
 }
 
 .service-item {
     background-color: white;
-    padding: 30px; /* Increased padding */
-    border-radius: 0.75rem; /* More rounded corners */
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); /* Subtle shadow */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added box-shadow transition */
+    padding: 30px;
+    border-radius: 0.75rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .service-item:hover {
-    transform: translateY(-5px); /* Slight lift on hover */
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12); /* Increased shadow on hover */
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
 }
 
 .service-item h3 {
     margin-top: 0;
     margin-bottom: 15px;
-    font-size: 1.5em; /* Larger heading */
+    font-size: 1.5em;
     color: #00bcd4;
     font-weight: 600;
     letter-spacing: -0.02em;
@@ -134,7 +134,7 @@ body {
 
 #why-us li {
     padding: 15px 0;
-    border-bottom: 1px solid #dee2e6; /* Lighter border */
+    border-bottom: 1px solid #dee2e6;
     font-size: 1.1em;
     color: #666;
 }
@@ -150,7 +150,7 @@ body {
 /* --- Call to Action Section --- */
 #cta {
     background-color: #e0f7fa;
-    padding: 100px 0; /* Increased padding */
+    padding: 100px 0;
     text-align: center;
     background-image: linear-gradient(to bottom, #e0f7fa, #f0f4f8);
 }
@@ -225,6 +225,125 @@ footer {
     font-size: 0.9em;
 }
 
-footer p{
+footer p {
     font-size: 1em;
+}
+
+/* --- Sticky Contact Button (Mobile) --- */
+.mobile-contact-button {
+    position: fixed; /* Fix the position */
+    bottom: 20px; /* Distance from the bottom */
+    right: 20px; /* Distance from the right */
+    background-color: #4CAF50; /* Green color */
+    color: white;
+    padding: 15px;
+    border-radius: 50%; /* Make it round */
+    font-size: 1.2em;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Add shadow */
+    z-index: 1000; /* Ensure it's above other elements */
+    display: none; /* Hide on larger screens */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.mobile-contact-button:hover {
+    background-color: #388E3C; /* Darker green on hover */
+    transform: scale(1.1); /* Slightly larger on hover */
+}
+
+/* --- Media Queries for Responsiveness --- */
+
+/* Smaller than 1200px (adjust as needed) */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+/* Smaller than 992px (md breakpoint) */
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+
+    #hero h1 {
+        font-size: 2.5em; /* Smaller heading on medium screens */
+    }
+
+    #hero p.subheadline {
+        font-size: 1.2em;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+    }
+}
+
+/* Smaller than 768px (sm breakpoint) */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    #hero {
+        padding: 80px 0; /* Reduced padding on small screens */
+    }
+
+    #hero h1 {
+        font-size: 2em; /* Smaller heading on small screens */
+    }
+
+    #hero p.subheadline {
+        font-size: 1.1em; /* Smaller subheadline */
+    }
+
+    .cta-button {
+        font-size: 1em;
+        padding: 12px 25px;
+    }
+
+    #about h2,
+    #services h2,
+    #why-us h2,
+    #cta h2,
+    #contact h2 {
+        font-size: 2em; /* Smaller section titles on small screens */
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr; /* 1 column on small screens */
+    }
+
+    .service-item {
+        padding: 20px;
+    }
+
+    #cta p {
+        font-size: 1.1em;
+    }
+
+    /* Show the mobile contact button */
+    .mobile-contact-button {
+        display: block;
+    }
+}
+
+/* Smaller than 576px (xs breakpoint) */
+@media (max-width: 576px) {
+    #hero {
+        padding: 60px 0;
+    }
+
+    #hero h1 {
+        font-size: 1.75em; /* Even smaller heading on very small screens */
+    }
+
+    #hero p.subheadline {
+        font-size: 1em;
+    }
+
+    .cta-button {
+        font-size: 0.9em;
+        padding: 10px 20px;
+    }
 }

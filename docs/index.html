@@ -4,14 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reliable Archival Centre- Secure Archival for Clinical Studies</title>
-    <link rel="stylesheet" href="style.css"> </head>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function callPhoneNumber() {
+            window.location.href = "tel:9168312436";
+        }
+
+        function sendEmail() {
+            window.location.href = "mailto:info@reliablearch.com";
+        }
+    </script>
+</head>
 <body>
 
     <section id="hero">
+        We are <b>Reliable Arch</b>
         <div class="container">
             <h1>Your Trusted Partner for Secure Clinical Study Archiving in Pune</h1>
             <p class="subheadline">Reliable and compliant archival solutions tailored for hospitals and clinical trial companies in Pune, Mumbai, and Maharashtra.</p>
-            <button class="cta-button">Contact us</button>
+            <button class="cta-button" onclick="callPhoneNumber()">Contact us</button>
         </div>
     </section>
 
@@ -29,43 +40,43 @@
                 <div class="service-item">
                     <h3>Specified Archival Centre</h3>
                     <p>Your clinical study documents are stored in a dedicated, controlled environment, purpose-built for long-term preservation and regulatory compliance.</p>
-                    </div>
+                </div>
                 <div class="service-item">
                     <h3>Separate Trunk for Each Project</h3>
                     <p>We maintain the integrity and confidentiality of each study with individually secured storage units, ensuring clear segregation and easy identification.</p>
-                    </div>
+                </div>
                 <div class="service-item">
                     <h3>Advanced In-Out Digital System</h3>
                     <p>Our efficient digital tracking system provides a complete audit trail for all document movements, ensuring accountability and simplifying retrieval.</p>
-                    </div>
+                </div>
                 <div class="service-item">
                     <h3>24/7 CCTV Surveillance</h3>
                     <p>Continuous monitoring with comprehensive CCTV coverage ensures the utmost security of your valuable research data.</p>
-                    </div>
+                </div>
                 <div class="service-item">
                     <h3>Integrated Fire Fighting System</h3>
                     <p>Our advanced fire detection and suppression systems are in place to protect your documents against potential hazards.</p>
-                    </div>
+                </div>
                 <div class="service-item">
                     <h3>Multi-Layered Security with Gated Locking System</h3>
                     <p>Access to our facility is strictly controlled through a gated entry and robust locking mechanisms, safeguarding your confidential information.</p>
-                    </div>
+                </div>
                 <div class="service-item">
                     <h3>Segregated and Controlled Storage Areas</h3>
                     <p>We maintain distinct and environmentally controlled areas within our facility to meet the specific preservation needs of different document types.</p>
-                    </div>
+                </div>
                 <div class="service-item">
                     <h3>Unwavering Commitment to Confidentiality</h3>
                     <p>Our stringent protocols and trained personnel guarantee the complete confidentiality of your sensitive clinical trial data.</p>
-                    </div>
+                </div>
                 <div class="service-item">
                     <h3>Convenient Pick-Up Documentation Service</h3>
                     <p>We offer secure and reliable pick-up of your clinical trial documentation directly from your site, streamlining the archival process.</p>
-                    </div>
+                </div>
                 <div class="service-item">
                     <h3>Serving Pune, Mumbai, and Maharashtra</h3>
                     <p>Our services are readily available across key healthcare and pharmaceutical hubs in Maharashtra, providing convenient access to our expertise.</p>
-                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -83,25 +94,26 @@
             </ul>
         </div>
     </section>
-
-    <!-- <section id="cta">
+    <section id="cta">
         <div class="container">
             <h2>Ready to Secure Your Clinical Trial Archives?</h2>
             <p>Contact us today to discuss your specific archival needs and discover how Reliable Archival can help.</p>
-            <button class="cta-button">Request a Free Quote</button>
+            <!-- <button class="cta-button">Request a Free Quote</button> -->
         </div>
-    </section> -->
+    </section>
 
     <section id="contact">
         <div class="container">
             <h2>Contact Us</h2>
             <p>Reliable Archival<br>
-            Kharadi, Pune<br>
-            Phone: <a href="tel:9168312436"> </a><br>
-            Email: <a href="mailto:infor@reliablearch.com">infor@reliablearch.com</a></p>
-
-            <button class="call-button cta-button">
-                <a href="tel:9168312436">Call Us Now</a>
+                Phone: <span onclick="callPhoneNumber()" style="cursor: pointer; color: #00bcd4;">9168312436</span><br>
+                Email: <span onclick="sendEmail()" style="cursor: pointer; color: #00bcd4;">info@reliablearch.com</span></p>
+  
+            <p>Address: <br>              
+                Office: Kharadi, Pune<br>
+                Archival Centre: Xrbia Eiffel City Phase-2 1436, Ranubaimala, Chakan-Talegaon Road, Pune 410501
+            <button class="cta-button" onclick="callPhoneNumber()">
+                Call Us Now
             </button>
         </div>
     </section>
@@ -109,7 +121,7 @@
     <footer>
         <div class="container">
             <p>&copy; 2025 Reliable Archival. All rights reserved.</p>
-            </div>
+        </div>
     </footer>
 
     <script src="script.js"></script>
