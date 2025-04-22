@@ -1,11 +1,12 @@
-/* Basic CSS for layout - we can expand on this later */
+/* Modern CSS for Reliable Archival Website */
+
 body {
-    font-family: sans-serif;
+    font-family: 'Inter', sans-serif; /* More modern font */
     margin: 0;
     padding: 0;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
+    line-height: 1.7; /* Improved line height for readability */
+    color: #343a40; /* Darker, more modern text color */
+    background-color: #f8f9fa; /* Very light background */
 }
 
 .container {
@@ -14,82 +15,128 @@ body {
     padding: 20px;
 }
 
+/* --- Hero Section --- */
 #hero {
-    background-color: #e0f7fa; /* Light blue background */
-    padding: 100px 0;
+    background-color: #e0f7fa;
+    padding: 120px 0; /* Increased padding */
     text-align: center;
+    background-image: linear-gradient(to bottom, #e0f7fa, #f0f4f8); /* Subtle gradient */
 }
 
 #hero h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
+    font-size: 3em; /* Larger heading */
+    margin-bottom: 25px;
+    font-weight: 700; /* Bold font weight */
+    color: #2c3e50; /* Darker heading color */
+    letter-spacing: -0.02em;
 }
 
-.subheadline {
-    font-size: 1.2em;
-    color: #555;
-    margin-bottom: 30px;
+#hero p.subheadline {
+    font-size: 1.3em;
+    color: #6c757d; /* Slightly darker subheadline */
+    margin-bottom: 40px;
+    font-weight: 400;
 }
 
 .cta-button {
-    background-color: #00bcd4; /* Teal button */
+    background-color: #00bcd4;
     color: white;
     padding: 15px 30px;
     text-decoration: none;
-    border-radius: 5px;
-    font-size: 1.1em;
+    border-radius: 0.5rem; /* More rounded corners */
+    font-size: 1.2em;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Add shadow */
 }
 
+.cta-button:hover {
+    background-color: #00869e; /* Darker teal on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+/* --- About Us Section --- */
 #about {
-    padding: 60px 0;
+    padding: 80px 0;
     background-color: white;
 }
 
-#about h2, #services h2, #why-us h2, #cta h2, #contact h2 {
-    font-size: 2em;
+#about h2,
+#services h2,
+#why-us h2,
+#cta h2,
+#contact h2 {
+    font-size: 2.5em; /* Larger section titles */
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+    font-weight: 600; /* Semi-bold */
+    color: #2c3e50;
+    letter-spacing: -0.02em;
 }
 
+#about p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+/* --- Key Services Section --- */
 #services {
-    padding: 60px 0;
-    background-color: #f9f9f9;
+    padding: 80px 0;
+    background-color: #f8f9fa; /* Slightly lighter background */
 }
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    margin-top: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Increased min-width */
+    gap: 40px; /* Increased gap */
+    margin-top: 40px;
 }
 
 .service-item {
     background-color: white;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 30px; /* Increased padding */
+    border-radius: 0.75rem; /* More rounded corners */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added box-shadow transition */
+}
+
+.service-item:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12); /* Increased shadow on hover */
 }
 
 .service-item h3 {
     margin-top: 0;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    font-size: 1.5em; /* Larger heading */
     color: #00bcd4;
+    font-weight: 600;
+    letter-spacing: -0.02em;
 }
 
+.service-item p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+/* --- Why Choose Us Section --- */
 #why-us {
-    padding: 60px 0;
+    padding: 80px 0;
     background-color: white;
 }
 
 #why-us ul {
     list-style: none;
     padding: 0;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 #why-us li {
-    padding: 10px 0;
-    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+    border-bottom: 1px solid #dee2e6; /* Lighter border */
+    font-size: 1.1em;
+    color: #666;
 }
 
 #why-us li:last-child {
@@ -100,28 +147,84 @@ body {
     color: #00bcd4;
 }
 
+/* --- Call to Action Section --- */
 #cta {
     background-color: #e0f7fa;
-    padding: 80px 0;
+    padding: 100px 0; /* Increased padding */
     text-align: center;
+    background-image: linear-gradient(to bottom, #e0f7fa, #f0f4f8);
+}
+
+#cta h2 {
+    font-size: 2.5em;
+    margin-bottom: 25px;
+    font-weight: 600;
+    color: #2c3e50;
+    letter-spacing: -0.02em;
 }
 
 #cta p {
-    font-size: 1.2em;
-    color: #555;
-    margin-bottom: 30px;
+    font-size: 1.3em;
+    color: #6c757d;
+    margin-bottom: 40px;
 }
 
+/* --- Contact Us Section --- */
 #contact {
-    padding: 60px 0;
-    background-color: white;
+    padding: 80px 0;
+    background-color: #f8f9fa;
     text-align: center;
 }
 
+#contact p {
+    font-size: 1.1em;
+    color: #666;
+    line-height: 1.8;
+}
+
+#contact a {
+    color: #00bcd4;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+#contact a:hover {
+    color: #00869e;
+}
+
+.call-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    font-size: 1.2em;
+    margin-top: 20px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.call-button a {
+    color: white;
+    text-decoration: none;
+}
+
+.call-button:hover {
+    background-color: #388E3C;
+    transform: translateY(-2px);
+}
+
+/* --- Footer --- */
 footer {
-    background-color: #333;
+    background-color: #2c3e50;
     color: white;
     text-align: center;
-    padding: 20px 0;
+    padding: 25px 0;
     font-size: 0.9em;
+}
+
+footer p{
+    font-size: 1em;
 }
