@@ -1,0 +1,127 @@
+/* Basic CSS for layout - we can expand on this later */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#hero {
+    background-color: #e0f7fa; /* Light blue background */
+    padding: 100px 0;
+    text-align: center;
+}
+
+#hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.subheadline {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #00bcd4; /* Teal button */
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+#about {
+    padding: 60px 0;
+    background-color: white;
+}
+
+#about h2, #services h2, #why-us h2, #cta h2, #contact h2 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#services {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.service-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.service-item h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #00bcd4;
+}
+
+#why-us {
+    padding: 60px 0;
+    background-color: white;
+}
+
+#why-us ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#why-us li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+#why-us li:last-child {
+    border-bottom: none;
+}
+
+#why-us strong {
+    color: #00bcd4;
+}
+
+#cta {
+    background-color: #e0f7fa;
+    padding: 80px 0;
+    text-align: center;
+}
+
+#cta p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+#contact {
+    padding: 60px 0;
+    background-color: white;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9em;
+}
