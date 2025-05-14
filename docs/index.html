@@ -1,30 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reliable Archival Centre- Secure Archival for Clinical Studies</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'], // Changed to Montserrat
+                    }
+                }
+            }
+        }
+    </script>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Replaced Inter with Montserrat -->
+    <script type="importmap">
+        {
+          "imports": {
+            "preact": "https://unpkg.com/preact@latest/dist/preact.module.js",
+            "preact/hooks": "https://unpkg.com/preact@latest/hooks/dist/hooks.module.js",
+            "htm": "https://unpkg.com/htm@latest/dist/htm.module.js"
+          }
+        }
+    </script>
     <script>
         function callPhoneNumber() {
-            window.location.href = "tel:9168312436";
+            window.location.href = "tel:9028406036";
         }
 
         function sendEmail() {
             window.location.href = "mailto:info@reliablearch.com";
         }
-    </script>
-</head>
-<body>
 
-    <section id="hero">
+        // Smooth scroll for anchor links (optional, can also be done with CSS)
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body class="font-sans">
+    <nav class="navbar fixed top-0 left-0 w-full z-50 bg-gray-900 bg-opacity-60 backdrop-blur-sm text-white shadow-sm">
+        <div class="container mx-auto px-4 flex justify-between items-center h-16">
+            <a href="#hero" class="text-xl font-semibold hover:text-teal-300 transition-colors">Reliable Archival</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="#about" class="hover:text-teal-300 transition-colors">About</a>
+                <a href="#services" class="hover:text-teal-300 transition-colors">Services</a>
+                <a href="#why-us" class="hover:text-teal-300 transition-colors">Why Us</a>
+                <a href="#virtual-tour" class="hover:text-teal-300 transition-colors">Virtual Tour</a>
+                <a href="#contact" class="hover:text-teal-300 transition-colors">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu (Initially Hidden) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-black bg-opacity-75">
+            <a href="#about"
+                class="block text-center py-2 px-4 hover:bg-gray-700 hover:text-teal-300 transition-colors">About</a>
+            <a href="#services"
+                class="block text-center py-2 px-4 hover:bg-gray-700 hover:text-teal-300 transition-colors">Services</a>
+            <a href="#why-us"
+                class="block text-center py-2 px-4 hover:bg-gray-700 hover:text-teal-300 transition-colors">Why Us</a>
+            <a href="#virtual-tour"
+                class="block text-center py-2 px-4 hover:bg-gray-700 hover:text-teal-300 transition-colors">Virtual
+                Tour</a>
+            <a href="#contact"
+                class="block text-center py-2 px-4 hover:bg-gray-700 hover:text-teal-300 transition-colors">Contact</a>
+        </div>
+    </nav>
+    <section class="h-16"></section>
+    <section id="hero" class=""> <!-- Added pt-16 to offset fixed navbar height -->
         <div class="container">
             <h1>We are <span class="animated-partner">Reliable Archival</span>...</h1>
-            <h2>Your  <span class="animated-partner">Trusted Partner</span> for Secure Clinical Study Archiving in Pune</h2>
-            <p class="subheadline">Durable <span class="animated-partner">Archival</span> solutions tailored for hospitals and clinical trial companies in Pune, Mumbai, and overall Maharashtra region.</p>
+            <h2>Your <span class="animated-partner">Trusted Partner</span> for Secure Clinical Study Archiving in Pune
+            </h2>
+            <p class="subheadline">Durable <span class="animated-partner">Archival</span> solutions tailored for
+                hospitals and clinical trial companies in Pune, Mumbai, and overall Maharashtra region.</p>
             <button class="cta-button" onclick="window.location.href='#contact'">Contact us</button>
         </div>
     </section>
@@ -32,53 +111,67 @@
     <section id="about">
         <div class="container">
             <h2>About us</h2>
-            <p>Reliable Archival is a Pune-based company dedicated to providing secure, compliant, and efficient archival services for clinical study documentation. We understand the critical importance of preserving the integrity and accessibility of your research data and are committed to offering tailored solutions that meet the unique needs of hospitals and clinical trial companies across Maharashtra. Our expertise ensures your archives are managed with the highest standards of security and in full compliance with regulatory requirements.</p>
+            <p>Reliable Archival is a Pune-based company dedicated to providing secure, compliant, and efficient
+                archival services for clinical study documentation. We understand the critical importance of preserving
+                the integrity and accessibility of your research data and are committed to offering tailored solutions
+                that meet the unique needs of hospitals and clinical trial companies across Maharashtra. Our expertise
+                ensures your archives are managed with the highest standards of security and in full compliance with
+                regulatory requirements.</p>
         </div>
     </section>
-
     <section id="services">
         <div class="container">
             <h2>Key Services: जतन करूया, जपून ठेवूया</h2>
             <div class="services-grid">
                 <div class="service-item">
                     <h3>Specified Archival Centre</h3>
-                    <p>Your clinical study documents are stored in a dedicated, controlled environment, purpose-built for long-term preservation and regulatory compliance.</p>
+                    <p>Your clinical study documents are stored in a dedicated, controlled environment, purpose-built
+                        for long-term preservation and regulatory compliance.</p>
                 </div>
                 <div class="service-item">
                     <h3>Separate Trunk for Each Project</h3>
-                    <p>We maintain the integrity and confidentiality of each study with individually secured storage units, ensuring clear segregation and easy identification.</p>
+                    <p>We maintain the integrity and confidentiality of each study with individually secured storage
+                        units, ensuring clear segregation and easy identification.</p>
                 </div>
                 <div class="service-item">
                     <h3>Advanced In-Out Digital System</h3>
-                    <p>Our efficient digital tracking system provides a complete audit trail for all document movements, ensuring accountability and simplifying retrieval.</p>
+                    <p>Our efficient digital tracking system provides a complete audit trail for all document movements,
+                        ensuring accountability and simplifying retrieval.</p>
                 </div>
                 <div class="service-item">
                     <h3>24/7 CCTV Surveillance</h3>
-                    <p>Continuous monitoring with comprehensive CCTV coverage ensures the utmost security of your valuable research data.</p>
+                    <p>Continuous monitoring with comprehensive CCTV coverage ensures the utmost security of your
+                        valuable research data.</p>
                 </div>
                 <div class="service-item">
                     <h3>Integrated Fire Fighting System</h3>
-                    <p>Our advanced fire detection and suppression systems are in place to protect your documents against potential hazards.</p>
+                    <p>Our advanced fire detection and suppression systems are in place to protect your documents
+                        against potential hazards.</p>
                 </div>
                 <div class="service-item">
                     <h3>Multi-Layered Security with Gated Locking System</h3>
-                    <p>Access to our facility is strictly controlled through a gated entry and robust locking mechanisms, safeguarding your confidential information.</p>
+                    <p>Access to our facility is strictly controlled through a gated entry and robust locking
+                        mechanisms, safeguarding your confidential information.</p>
                 </div>
                 <div class="service-item">
                     <h3>Segregated and Controlled Storage Areas</h3>
-                    <p>We maintain distinct and environmentally controlled areas within our facility to meet the specific preservation needs of different document types.</p>
+                    <p>We maintain distinct and environmentally controlled areas within our facility to meet the
+                        specific preservation needs of different document types.</p>
                 </div>
                 <div class="service-item">
                     <h3>Unwavering Commitment to Confidentiality</h3>
-                    <p>Our stringent protocols and trained personnel guarantee the complete confidentiality of your sensitive clinical trial data.</p>
+                    <p>Our stringent protocols and trained personnel guarantee the complete confidentiality of your
+                        sensitive clinical trial data.</p>
                 </div>
                 <div class="service-item">
                     <h3>Convenient Pick-Up Documentation Service</h3>
-                    <p>We offer secure and reliable pick-up of your clinical trial documentation directly from your site, streamlining the archival process.</p>
+                    <p>We offer secure and reliable pick-up of your clinical trial documentation directly from your
+                        site, streamlining the archival process.</p>
                 </div>
                 <div class="service-item">
                     <h3>Serving Pune, Mumbai, and Maharashtra</h3>
-                    <p>Our services are readily available across key healthcare and pharmaceutical hubs in Maharashtra, providing convenient access to our expertise.</p>
+                    <p>Our services are readily available across key healthcare and pharmaceutical hubs in Maharashtra,
+                        providing convenient access to our expertise.</p>
                 </div>
             </div>
         </div>
@@ -88,9 +181,12 @@
         <div class="container">
             <h2>Why Choose Reliable Archival?</h2>
             <ul>
-                <li><strong>Uncompromising Security:</strong> State-of-the-art security measures to protect your sensitive data.</li>
-                <li><strong>Ensured Regulatory Compliance:</strong> Expertise in GCP and other relevant regulations.</li>
-                <li><strong>Efficient and Accessible:</strong> Streamlined processes for easy retrieval and management.</li>
+                <li><strong>Uncompromising Security:</strong> State-of-the-art security measures to protect your
+                    sensitive data.</li>
+                <li><strong>Ensured Regulatory Compliance:</strong> Expertise in GCP and other relevant regulations.
+                </li>
+                <li><strong>Efficient and Accessible:</strong> Streamlined processes for easy retrieval and management.
+                </li>
                 <li><strong>Cost-Effective Solutions:</strong> Save on the overhead of in-house archival.</li>
                 <li><strong>Dedicated Expertise:</strong> Experienced professionals committed to your needs.</li>
                 <li><strong>Convenient Location:</strong> Strategically based in Pune, serving Maharashtra.</li>
@@ -109,19 +205,23 @@
         <div class="container">
             <h2>Contact Us</h2>
             <p>Reliable Archival<br>
-            Kharadi, Pune<br>
-            Phone: <span onclick="callPhoneNumber()" style="cursor: pointer; color: #00bcd4;">9168312436</span><br>
-            Email: <span onclick="sendEmail()" style="cursor: pointer; color: #00bcd4;">info@reliablearch.com</span></p>
+                Kharadi, Pune<br>
+                Phone: <span onclick="callPhoneNumber()" style="cursor: pointer; color: #00bcd4;">9028406036</span><br>
+                Email: <span onclick="sendEmail()" style="cursor: pointer; color: #00bcd4;">info@reliablearch.com</span>
+            </p>
 
-            <p>Address: <br>              
+            <p>Address: <br>
                 Office: Kharadi, Pune<br>
                 Archival Centre: Xrbia Eiffel City Phase-2 1436, Ranubaimala, Chakan-Talegaon Road, Pune 410501
-            <br/>
-            <button class="cta-button" onclick="callPhoneNumber()">
-                Call Us Now
-            </button>
+                <br />
+                <button class="cta-button" onclick="callPhoneNumber()">
+                    Call Us Now
+                </button>
         </div>
     </section>
+
+    <!-- Placeholder for Preact App -->
+    <div id="preact-root" class="my-8"></div>
 
     <footer>
         <div class="container">
@@ -130,5 +230,7 @@
     </footer>
 
     <script src="script.js"></script>
+    <script type="module" src="app.js"></script>
 </body>
+
 </html>

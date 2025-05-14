@@ -46,10 +46,15 @@ body {
 
 /* --- Hero Section --- */
 #hero {
-    background-color: #e0f7fa;
+    /* background-color: #b2edf5; */
     padding: 15px 0;
     text-align: center;
-    background-image: linear-gradient(to bottom, #e0f7fa, #f0f4f8);
+    background-image: linear-gradient(to bottom, #63b1bb, #e8f3ff);
+}
+
+.navbar {
+    background-image: linear-gradient(to bottom, #6dc4d0, #63b1bb);
+    /* height: ; */
 }
 
 #hero h1 {
