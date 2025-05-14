@@ -59,7 +59,12 @@ function SavingsCalculator() {
 
     return html`
         <div class="bg-gray-100 p-6 md:p-8 rounded-lg shadow-xl my-10">
-            <h3 class="text-2xl md:text-3xl font-bold text-center text-teal-700 mb-6">Archival Savings Calculator</h3>
+            <div class="flex justify-center items-center mb-6">
+               <img src="assets/logo_medium.png" alt="Reliable Archival Logo" class="h-16 w-auto mr-3 rounded-lg" />
+
+               <h3 class="text-2xl md:text-3xl font-bold text-center text-teal-700 my-2">Archival Savings Calculator</h3>
+
+            </div>
             <p class="text-center text-gray-600 mb-8 max-w-2xl mx-auto">
                 Estimate your potential savings. Assumes an average of ${FILES_PER_STUDY} files per study/case.
             </p>
@@ -93,10 +98,10 @@ function SavingsCalculator() {
                 <div class="bg-white p-6 rounded-lg shadow max-w-2xl mx-auto">
                     <h4 class="text-xl font-semibold text-gray-800 mb-4 text-center">Estimated Results (Over ${selectedDuration} Years)</h4>
                     <div class="space-y-3 text-gray-700">
-                        <p><strong>Total Unique Files Generated & Archived:</strong> ${totalUniqueFilesToArchive.toLocaleString()}</p>
+                        <p><strong>Total Unique Files Produced: </strong> ${totalUniqueFilesToArchive.toLocaleString()}</p>
                         <div class="relative">
                             <p>
-                                <strong>Estimated In-House Archival Cost:</strong> ₹${totalInHouseCost.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
+                                <strong>Estimated In-House Archival Cost: </strong> ₹${totalInHouseCost.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
                                 <span
                                     class="ml-1 inline-flex items-center justify-center w-5 h-5 rounded-full bg-gray-300 text-gray-800 text-xs font-bold cursor-pointer hover:bg-gray-400 transition-colors"
                                     onMouseEnter=${() => setShowInHouseInfo(true)}
