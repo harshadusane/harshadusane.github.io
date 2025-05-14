@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Tour - Reliable Archival Centre</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script type="importmap">
+        {
+          "imports": {
+            "preact": "https://unpkg.com/preact@latest/dist/preact.module.js",
+            "preact/hooks": "https://unpkg.com/preact@latest/hooks/dist/hooks.module.js",
+            "htm": "https://unpkg.com/htm@latest/dist/htm.module.js"
+          }
+        }
+    </script>
+    <script>
+        function callPhoneNumber() {
+            window.location.href = "tel:9028406036";
+        }
+
+        function sendEmail() {
+            window.location.href = "mailto:info@reliablearch.com";
+        }
+
+        // Smooth scroll for anchor links (if present on this page)
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetElement = document.querySelector(this.getAttribute('href'));
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            /* If you have a specific background in style.css, it will apply. 
+               Otherwise, Tailwind's default or font-sans will be the base. */
+        }
+    </style>
+</head>
+
+<body class="font-sans">
+    <nav class="navbar fixed top-0 left-0 w-full z-50 bg-gray-900 bg-opacity-60 backdrop-blur-sm text-white shadow-sm">
+        <div class="container mx-auto px-4 flex justify-between items-center h-16">
+            <a href="index.html#hero" class="text-xl font-semibold hover:text-teal-300 transition-colors">Reliable
+                Archival</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="index.html#services" class="hover:text-teal-300 transition-colors">Services</a>
+                <a href="index.html#why-us" class="hover:text-teal-300 transition-colors">Why Us? </a>
+                <a href="index.html#calc" class="hover:text-teal-300 transition-colors">Savings Calculator!</a>
+                <a href="virtual-tour.html" class="text-teal-300 transition-colors">Virtual Tour</a>
+                <!-- Current page, styled differently or non-clickable -->
+                <a href="index.html#contact" class="hover:text-teal-300 transition-colors">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden backdrop-blur-sm bg-opacity-60 navbar"
+            style="backound-color:#478189">
+            <a href="index.html#services"
+                class="block text-center py-2 px-4 hover:bg-gray-600 hover:text-teal-300 transition-colors">Services</a>
+            <a href="index.html#why-us"
+                class="block text-center py-2 px-4 hover:bg-gray-600 hover:text-teal-300 transition-colors">Why Us?</a>
+            <a href="index.html#calc"
+                class="block text-center py-2 px-4 hover:bg-gray-600 hover:text-teal-300 transition-colors">Try Our
+                Savings Calculator!</a>
+            <a href="virtual-tour.html"
+                class="block text-center py-2 px-4 text-teal-300 bg-gray-700 transition-colors">Virtual Tour</a>
+            <a href="index.html#contact"
+                class="block text-center py-2 px-4 hover:bg-gray-600 hover:text-teal-300 transition-colors">Contact</a>
+        </div>
+    </nav>
+    <section class="h-16"></section> <!-- Spacer for fixed navbar -->
+
+    <main id="virtual-tour-content" class="container mx-auto px-4 py-8">
+        <h1 class="text-4xl font-bold text-center text-gray-800 mb-10">Virtual Tour of Our Facility</h1>
+        <p class="text-lg text-center text-gray-600 mb-12">Explore our state-of-the-art archival center. The image
+            gallery will be displayed below.</p>
+
+        <!-- Placeholder for Image Gallery -->
+        <div id="image-gallery-placeholder"
+            class="bg-gray-200 p-8 rounded-lg shadow-md min-h-[400px] flex items-center justify-center">
+            <p class="text-gray-500 text-xl">Image Gallery Coming Soon!</p>
+        </div>
+    </main>
+
+    <!-- You can decide if you want the Preact app (calculator, etc.) on this page too -->
+    <!-- <div id="preact-root" class="my-8"></div> -->
+
+    <footer class="mt-12">
+        <div class="container">
+            <p>&copy; 2025 Reliable Archival. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- If you don't want the Preact app on this page, you can comment out or remove app.js -->
+    <!-- <script type="module" src="app.js"></script> -->
+</body>
+
+</html>
