@@ -61,8 +61,7 @@ function SavingsCalculator() {
         <div class="bg-gray-100 p-6 md:p-8 rounded-lg shadow-xl my-10">
             <h3 class="text-2xl md:text-3xl font-bold text-center text-teal-700 mb-6">Archival Savings Calculator</h3>
             <p class="text-center text-gray-600 mb-8 max-w-2xl mx-auto">
-                Estimate your potential savings. Assumes an average of ${FILES_PER_STUDY} files per study/case. Costs are in INR (₹).
-                In-house maintenance is estimated to be ${FIXED_IN_HOUSE_COST_MULTIPLIER}x the cost of Reliable Archival.
+                Estimate your potential savings. Assumes an average of ${FILES_PER_STUDY} files per study/case.
             </p>
 
             <div class="grid md:grid-cols-2 gap-6 mb-8 max-w-xl mx-auto">
