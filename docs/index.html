@@ -24,6 +24,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/logo_small.png" type="image/png">
     <!-- Replaced Inter with Montserrat -->
     <script type="importmap">
         {
@@ -63,13 +64,18 @@
 <body class="font-sans">
     <nav class="navbar fixed top-0 left-0 w-full z-50 bg-gray-900 bg-opacity-60 backdrop-blur-sm text-white shadow-sm">
         <div class="container mx-auto px-4 flex justify-between items-center h-16">
-            <a href="#hero" class="text-xl font-semibold hover:text-teal-300 transition-colors">
-                Reliable Archival Centre</a>
+
+            <a href="#hero" class="flex items-center text-xl font-semibold hover:text-teal-300 transition-colors">
+                <img src="assets/logo_medium.png" alt="Reliable Archival Logo" class="h-8 w-auto mr-2 rounded-lg">
+                <!-- Logo Added Here -->
+                Reliable Archival Centre
+            </a>
+
             <div class="hidden md:flex space-x-6">
                 <a href="#services" class="hover:text-teal-300 transition-colors">Services</a>
                 <a href="#why-us" class="hover:text-teal-300 transition-colors">Why Us? </a>
                 <a href="#calc" class="hover:text-teal-300 transition-colors">Savings Calculator!</a>
-                <a href="#virtual-tour" class="hover:text-teal-300 transition-colors">Virtual Tour</a>
+                <a href="virtual-tour.html" class="hover:text-teal-300 transition-colors">Virtual Tour</a>
                 <a href="#contact" class="hover:text-teal-300 transition-colors">Contact</a>
             </div>
             <div class="md:hidden">
@@ -96,7 +102,7 @@
             <a href="#calc" class="block text-center py-2 px-4 hover:bg-gray-600 hover:text-teal-300 transition-colors">
                 Try Our Savings Calculator!
             </a>
-            <a href="#virtual-tour"
+            <a href="virtual-tour.html"
                 class="block text-center py-2 px-4 hover:bg-gray-600 hover:text-teal-300 transition-colors">Virtual
                 Tour</a>
             <a href="#contact"
